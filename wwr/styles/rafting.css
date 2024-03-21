@@ -19,7 +19,7 @@
 /* The About page stylesheet */
 body {
 
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 20px;
 }
 
@@ -44,7 +44,10 @@ a {
 header nav a {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    font-weight: bold;
+    display: block;
+
+    padding: 20px;
+    text-decoration: none;
 }
 
 .hero {
@@ -53,21 +56,25 @@ header nav a {
 
 .hero h1 {
     position: absolute;
-    top: 10px;
-    left: 150px;
+    top: 5px;
+    left: 300px;
+
+
+    font-size: 40px;
 }
 
 .hero article {
-    width: 800px;
+    width: 900px;
     position: absolute;
     top: 110px;
-    left: 50px;
+    left: 150px;
     background-color: var(--accent2-color);
     opacity: 0.6;
     color: #FFFFFF;
 
     padding: 1rem;
 }
+
 
 .hero>img {
     display: block;
@@ -77,4 +84,123 @@ header nav a {
 
 .hero article img {
     float: right;
+}
+
+.hero article p {
+    font-size: 20px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding-bottom: 1.5rem;
+    /* border: 2px solid var(--primary-color); */
+    align-items: center;
+    align-content: center;
+    /* background-color: var(--nav-backgroud-color); */
+}
+
+.logo {
+    margin: 0 0.25rem 0 1rem;
+    width: 120px;
+    height: auto;
+}
+
+nav {
+    text-align: right;
+    display: flex;
+    list-style: none;
+
+}
+
+header nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+
+.history {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+    /* border: 2px solid var(--primary-color); */
+    padding: 10px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+.history h2 {
+    grid-column: 2/4;
+    grid-row: 1;
+    align-self: flex-start;
+}
+
+.history img {
+    width: 50%;
+    height: auto;
+    grid-column: 2/4;
+    grid-row: 1;
+
+}
+
+.history .description-1 {
+    order: -1;
+    margin: 0 0.20rem 0 0.5rem;
+}
+
+.history .description-2 {
+    grid-column: 4;
+    grid-row: 1;
+    margin: 0 0.25rem 0 0.5rem;
+
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    gap: 10px;
+    /* border: 2px solid var(--primary-color); */
+    padding: 10px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.adventure-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-around;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.adventure img {
+    margin: 0 0.25rem 0 0.5rem;
+    width: 220px;
+    height: auto;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    /* border: 2px solid var(--primary-color); */
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 }
